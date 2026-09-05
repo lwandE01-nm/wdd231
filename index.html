@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="WDD231 home page for Nothando Mabaso">
+    <meta name="author" content="Nothando Mabaso">
+
+    <title>WDD231 | Nothando Mabaso</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="images/logo.svg" alt="Site logo">
+
+            <span>Nothando Mabaso</span>
+
+            <button id="menuButton" aria-label="Open navigation menu">
+                ☰
+            </button>
+        </div>
+
+        <nav id="navMenu">
+            <a href="index.html" class="active">Home</a>
+            <a href="#">Chamber</a>
+            <a href="#">Final</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+                My name is Nothando Mabaso. I am studying Software Development
+                through BYU-Pathway Worldwide. I am learning web development,
+                programming, and software development.
+            </p>
+        </section>
+
+        <section class="photo">
+            <h2>Student Photo</h2>
+
+            <img src="images/profile.jpg" alt="Photo of Nothando Mabaso">
+        </section>
+
+        <section class="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+
+            <div class="course-buttons">
+                <button id="allCourses">All Courses</button>
+                <button id="wddCourses">WDD Courses</button>
+                <button id="cseCourses">CSE Courses</button>
+            </div>
+
+            <p id="creditTotal"></p>
+
+            <div id="courseContainer"></div>
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="social-links">
+            <a href="https://github.com/lwande01-nm" target="_blank">
+                GitHub
+            </a>
+
+            <a href="#" target="_blank">
+                LinkedIn
+            </a>
+
+            <a href="#" target="_blank">
+                Facebook
+            </a>
+        </div>
+
+        <p>
+            &copy; <span id="currentYear"></span>
+            Nothando Mabaso<br>
+            Eswatini
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+</html>
