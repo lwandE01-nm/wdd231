@@ -11,4 +11,5 @@ menuButton.addEventListener("click", () => {
         "aria-label",
         isOpen ? "Close navigation menu" : "Open navigation menu"
     );
+    menuButton.setAttribute("aria-expanded", isOpen);
 });

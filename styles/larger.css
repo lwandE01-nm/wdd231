@@ -1,8 +1,21 @@
+/* ===== Larger Screen Styles ===== */
+
 @media screen and (min-width: 700px) {
+
+    /* Header */
 
     #menuButton {
         display: none;
     }
+
+    .header-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+    }
+
+
+    /* Navigation */
 
     nav {
         display: flex;
@@ -12,11 +25,18 @@
 
     nav a {
         padding: 1rem 2rem;
+        border-top: none;
     }
+
+
+    /* Main */
 
     main {
         padding: 2rem;
     }
+
+
+    /* Course Buttons */
 
     .course-buttons {
         flex-direction: row;
@@ -28,9 +48,15 @@
         max-width: 200px;
     }
 
+
+    /* Course Cards */
+
     #courseContainer {
         grid-template-columns: repeat(2, 1fr);
     }
+
+
+    /* Student Photo */
 
     .photo img {
         max-width: 500px;
@@ -38,11 +64,10 @@
     }
 }
 
-@media screen and (min-width: 1000px) {
 
-    #courseContainer {
-        grid-template-columns: repeat(3, 1fr);
-    }
+/* ===== Large Desktop Screens ===== */
+
+@media screen and (min-width: 1000px) {
 
     main {
         display: grid;
@@ -64,5 +89,9 @@
 
     .certificate {
         grid-column: 1 / -1;
+    }
+
+    #courseContainer {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
