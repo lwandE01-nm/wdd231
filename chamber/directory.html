@@ -5,9 +5,12 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Directory of businesses and organizations that are members of the Mbabane Chamber of Commerce.">
+    <meta
+        name="description"
+        content="The Mbabane Chamber of Commerce business directory connects visitors with local businesses and organizations in Mbabane, Eswatini."
+    >
 
-    <meta name="author" content="Nothando AlwandeMabaso">
+    <meta name="author" content="Nothando Alwande Mabaso">
 
     <title>Mbabane Chamber of Commerce | Directory</title>
 
@@ -16,17 +19,29 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content="Mbabane Chamber of Commerce | Directory">
-    <meta property="og:description" content="Explore local businesses and organizations that are members of the Mbabane Chamber of Commerce.">
-    <meta property="og:image" content="https://lwande01-nm.github.io/wdd231/chamber/images/chamber.svg">
-    <meta property="og:url" content="https://lwande01-nm.github.io/wdd231/chamber/directory.html">
+    <meta
+        property="og:description"
+        content="Explore local businesses and organizations that are members of the Mbabane Chamber of Commerce."
+    >
+    <meta
+        property="og:image"
+        content="https://lwande01-nm.github.io/wdd231/chamber/images/business1.svg"
+    >
+    <meta
+        property="og:url"
+        content="https://lwande01-nm.github.io/wdd231/chamber/directory.html"
+    >
     <meta property="og:type" content="website">
 
-<!-- Google Fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
 
-<!-- CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -41,57 +56,117 @@
         <div class="header-content">
 
             <div class="brand">
-                <img src="images/logo.svg" alt="Mbabane Chamber of Commerce logo">
+                <img
+                    src="images/logo.svg"
+                    alt="Mbabane Chamber of Commerce logo"
+                    width="75"
+                    height="75"
+                >
+
                 <div>
-                    <h1>Mbabane Chamber of Commerce</h1>
+                    <p class="site-title">Mbabane Chamber of Commerce</p>
                     <p>Supporting Local Business</p>
                 </div>
             </div>
 
-            <button id="menu-button" aria-label="Open navigation menu">
+            <button
+                id="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+            >
                 ☰
             </button>
 
         </div>
 
-        <nav id="main-nav">
+        <nav id="main-nav" aria-label="Main navigation">
+
             <a href="index.html">Home</a>
+
             <a href="discover.html">Discover</a>
-            <a class="active" href="directory.html">Directory</a>
+
+            <a class="active" href="directory.html" aria-current="page">
+                Directory
+            </a>
+
             <a href="join.html">Join</a>
+
         </nav>
     </header>
 
-
     <main>
 
-        <h1>Business Directory</h1>
+        <h1>Mbabane Chamber of Commerce | Directory</h1>
 
         <div class="view-buttons">
-            <button id="grid-button">▦ Grid</button>
-            <button id="list-button">☰ List</button>
+
+            <button
+                id="grid-button"
+                type="button"
+                aria-label="Display members in grid view"
+            >
+                ▦ Grid
+            </button>
+
+            <button
+                id="list-button"
+                type="button"
+                aria-label="Display members in list view"
+            >
+                ☰ List
+            </button>
+
         </div>
 
-        <section id="members" class="member-grid">
-            <!-- Business members will be added here using JavaScript -->
+        <section
+            id="members"
+            class="member-grid"
+            aria-label="Chamber member businesses"
+        >
+            <!-- Business members are loaded here using JavaScript -->
         </section>
 
     </main>
 
-
     <footer>
 
         <div class="footer-contact">
-            <h3>Mbabane Chamber of Commerce</h3>
+
+            <h2>Mbabane Chamber of Commerce</h2>
+
             <p>Mbabane, Eswatini</p>
-            <p>Email: info@mbabanechamber.org</p>
-            <p>Phone: +268 2404 0000</p>
+
+            <p>
+                Email:
+                <a href="mailto:info@mbabanechamber.org">
+                    info@mbabanechamber.org
+                </a>
+            </p>
+
+            <p>
+                Phone:
+                <a href="tel:+26824040000">
+                    +268 2404 0000
+                </a>
+            </p>
+
         </div>
 
         <div class="footer-development">
-            <p>&copy; <span id="current-year"></span> Mbabane Chamber of Commerce</p>
-            <p>Nothando  Alwande Mabaso | WDD 231</p>
-            <p>Last Modification: <span id="last-modified"></span></p>
+
+            <p>
+                &copy;
+                <span id="current-year"></span>
+                Mbabane Chamber of Commerce
+            </p>
+
+            <p>Nothando Alwande Mabaso | WDD 231</p>
+
+            <p>
+                Last Modification:
+                <span id="last-modified"></span>
+            </p>
+
         </div>
 
     </footer>
