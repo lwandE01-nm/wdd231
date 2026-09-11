@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Directory of businesses and organizations that are members of the Mbabane Chamber of Commerce.">
+
+    <meta name="author" content="Nothando AlwandeMabaso">
+
+    <title>Mbabane Chamber of Commerce | Directory</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Mbabane Chamber of Commerce | Directory">
+    <meta property="og:description" content="Explore local businesses and organizations that are members of the Mbabane Chamber of Commerce.">
+    <meta property="og:image" content="https://lwande01-nm.github.io/wdd231/chamber/images/chamber.jpg">
+    <meta property="og:url" content="https://lwande01-nm.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+
+            <div class="brand">
+                <img src="images/logo.svg" alt="Mbabane Chamber of Commerce logo">
+                <div>
+                    <h1>Mbabane Chamber of Commerce</h1>
+                    <p>Supporting Local Business</p>
+                </div>
+            </div>
+
+            <button id="menu-button" aria-label="Open navigation menu">
+                ☰
+            </button>
+
+        </div>
+
+        <nav id="main-nav">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a class="active" href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <h2>Business Directory</h2>
+
+        <div class="view-buttons">
+            <button id="grid-button">▦ Grid</button>
+            <button id="list-button">☰ List</button>
+        </div>
+
+        <section id="members" class="member-grid">
+            <!-- Business members will be added here using JavaScript -->
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-contact">
+            <h3>Mbabane Chamber of Commerce</h3>
+            <p>Mbabane, Eswatini</p>
+            <p>Email: info@mbabanechamber.org</p>
+            <p>Phone: +268 2404 0000</p>
+        </div>
+
+        <div class="footer-development">
+            <p>&copy; <span id="current-year"></span> Mbabane Chamber of Commerce</p>
+            <p>Nothando  Alwande Mabaso | WDD 231</p>
+            <p>Last Modification: <span id="last-modified"></span></p>
+        </div>
+
+    </footer>
+
+</body>
+</html>

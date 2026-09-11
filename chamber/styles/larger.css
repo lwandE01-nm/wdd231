@@ -1,0 +1,94 @@
+/* =========================
+   Larger Screen Styles
+   ========================= */
+
+@media screen and (min-width: 700px) {
+
+    /* Header */
+
+    .header-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1.25rem 2rem;
+    }
+
+    .brand h1 {
+        font-size: 1.6rem;
+    }
+
+    .brand p {
+        font-size: 0.95rem;
+    }
+
+    .brand img {
+        width: 75px;
+        height: 75px;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    /* Navigation */
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: var(--dark-color);
+    }
+
+    nav a {
+        border: none;
+        padding: 1rem 1.5rem;
+    }
+
+    /* Main */
+
+    main {
+        padding: 2rem;
+    }
+
+    /* Grid */
+
+    .member-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* List */
+
+    .member-list .member-card {
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .member-list .member-card img {
+        display: block;
+        width: 120px;
+        height: 80px;
+        margin: 0;
+        flex-shrink: 0;
+    }
+
+    /* Footer */
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        padding: 2rem;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    .member-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .brand h1 {
+        font-size: 1.8rem;
+    }
+}

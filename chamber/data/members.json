@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Mbabane Business Solutions",
+        "address": "12 Gwamile Street, Mbabane, Eswatini",
+        "phone": "+268 2404 1234",
+        "website": "https://example.com",
+        "image": "business1.svg",
+        "membership": 3,
+        "description": "A local business support company providing administrative and consulting services."
+    },
+    {
+        "name": "Swazi Tech Solutions",
+        "address": "25 Sozisa Road, Mbabane, Eswatini",
+        "phone": "+268 2404 2345",
+        "website": "https://example.com",
+        "image": "business2.svg",
+        "membership": 3,
+        "description": "Technology and digital solutions for small and medium-sized businesses."
+    },
+    {
+        "name": "Mountain View Guest House",
+        "address": "8 Sibebe Road, Mbabane, Eswatini",
+        "phone": "+268 2404 3456",
+        "website": "https://example.com",
+        "image": "business3.svg",
+        "membership": 2,
+        "description": "Comfortable accommodation serving business and leisure travelers."
+    },
+    {
+        "name": "Mbabane Fresh Market",
+        "address": "45 Makhosini Street, Mbabane, Eswatini",
+        "phone": "+268 2404 4567",
+        "website": "https://example.com",
+        "image": "business4.svg",
+        "membership": 1,
+        "description": "A local retailer providing fresh produce and locally sourced products."
+    },
+    {
+        "name": "Highveld Accounting Services",
+        "address": "18 Dzeliwe Street, Mbabane, Eswatini",
+        "phone": "+268 2404 5678",
+        "website": "https://example.com",
+        "image": "business5.svg",
+        "membership": 2,
+        "description": "Professional accounting and financial services for local businesses."
+    },
+    {
+        "name": "Sibebe Creative Studio",
+        "address": "31 Msakato Street, Mbabane, Eswatini",
+        "phone": "+268 2404 6789",
+        "website": "https://example.com",
+        "image": "business6.svg",
+        "membership": 1,
+        "description": "Creative design, branding, photography, and marketing services."
+    },
+    {
+        "name": "Royal Insurance Services",
+        "address": "7 Sishayi Road, Mbabane, Eswatini",
+        "phone": "+268 2404 7890",
+        "website": "https://example.com",
+        "image": "business7.svg",
+        "membership": 2,
+        "description": "Insurance and financial protection services for individuals and businesses."
+    }
+]
