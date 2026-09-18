@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Welcome to the Mbabane Chamber of Commerce. Discover local businesses, events, weather, and opportunities to connect with the Mbabane business community."
+    >
+
+    <meta
+        name="author"
+        content="Nothando Alwande Mabaso"
+    >
+
+    <title>Mbabane Chamber of Commerce | Home</title>
+
+    <!-- Favicon -->
+    <link
+        rel="icon"
+        href="images/favicon.svg"
+        type="image/svg+xml"
+    >
+
+    <!-- Open Graph -->
+    <meta
+        property="og:title"
+        content="Mbabane Chamber of Commerce | Home"
+    >
+
+    <meta
+        property="og:description"
+        content="Connect with businesses, events, and opportunities in Mbabane, Eswatini."
+    >
+
+    <meta
+        property="og:image"
+        content="https://lwande01-nm.github.io/wdd231/chamber/images/hero.jpg"
+    >
+
+    <meta
+        property="og:url"
+        content="https://lwande01-nm.github.io/wdd231/chamber/index.html"
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <!-- Google Fonts -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="styles/normalize.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="styles/small.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="styles/larger.css"
+    >
+
+    <!-- JavaScript -->
+    <script
+        src="scripts/home.js"
+        defer
+    ></script>
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <div class="header-content">
+
+            <div class="brand">
+
+                <img
+                    src="images/logo.svg"
+                    alt="Mbabane Chamber of Commerce logo"
+                    width="75"
+                    height="75"
+                >
+
+                <div>
+
+                    <p class="site-title">
+                        Mbabane Chamber of Commerce
+                    </p>
+
+                    <p>
+                        Supporting Local Business
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <button
+                id="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="main-nav"
+            >
+                ☰
+            </button>
+
+        </div>
+
+
+        <nav
+            id="main-nav"
+            aria-label="Main navigation"
+        >
+
+            <a
+                class="active"
+                href="index.html"
+                aria-current="page"
+            >
+                Home
+            </a>
+
+            <a href="discover.html">
+                Discover
+            </a>
+
+            <a href="directory.html">
+                Directory
+            </a>
+
+            <a href="join.html">
+                Join
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <h1>Mbabane Chamber of Commerce</h1>
+
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <img
+                src="images/hero.jpg"
+                alt="Mbabane city and surrounding mountains"
+                width="1200"
+                height="500"
+            >
+
+            <div class="hero-content">
+
+                <h2>
+                    Growing Business Together
+                </h2>
+
+                <p>
+                    Connecting businesses and strengthening the Mbabane
+                    community.
+                </p>
+
+                <a
+                    class="join-button"
+                    href="join.html"
+                >
+                    Join the Chamber
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Current Events -->
+        <section class="events">
+
+            <h2>Current Events</h2>
+
+            <div class="event-list">
+
+                <article class="event-card">
+
+                    <h3>Business Networking Meeting</h3>
+
+                    <p>
+                        Meet local business owners and build valuable
+                        professional connections.
+                    </p>
+
+                    <p>
+                        <strong>Date:</strong>
+                        September 25, 2026
+                    </p>
+
+                </article>
+
+
+                <article class="event-card">
+
+                    <h3>Small Business Workshop</h3>
+
+                    <p>
+                        Learn practical strategies for growing and
+                        managing a successful small business.
+                    </p>
+
+                    <p>
+                        <strong>Date:</strong>
+                        October 2, 2026
+                    </p>
+
+                </article>
+
+
+                <article class="event-card">
+
+                    <h3>Community Business Expo</h3>
+
+                    <p>
+                        Discover products and services from businesses
+                        throughout the Mbabane area.
+                    </p>
+
+                    <p>
+                        <strong>Date:</strong>
+                        October 10, 2026
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Weather -->
+        <section class="weather">
+
+            <h2>Mbabane Weather</h2>
+
+            <div class="current-weather">
+
+                <h3>Current Weather</h3>
+
+                <p>
+                    Temperature:
+                    <span id="current-temperature">
+                        Loading...
+                    </span>
+                </p>
+
+                <p>
+                    Conditions:
+                    <span id="weather-description">
+                        Loading...
+                    </span>
+                </p>
+
+            </div>
+
+
+            <div class="forecast">
+
+                <h3>Three-Day Forecast</h3>
+
+                <div id="forecast-container">
+
+                    <p>Loading forecast...</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Company Spotlights -->
+        <section class="spotlights">
+
+            <h2>Business Spotlights</h2>
+
+            <div id="spotlight-container">
+
+                <p>
+                    Loading local business spotlights...
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-contact">
+
+            <h2>
+                Mbabane Chamber of Commerce
+            </h2>
+
+            <p>
+                Mbabane, Eswatini
+            </p>
+
+            <p>
+                Email:
+                <a href="mailto:info@mbabanechamber.org">
+                    info@mbabanechamber.org
+                </a>
+            </p>
+
+            <p>
+                Phone:
+                <a href="tel:+26824040000">
+                    +268 2404 0000
+                </a>
+            </p>
+
+        </div>
+
+
+        <div class="footer-development">
+
+            <p>
+
+                &copy;
+
+                <span id="current-year"></span>
+
+                Mbabane Chamber of Commerce
+
+            </p>
+
+            <p>
+                Nothando Alwande Mabaso | WDD 231
+            </p>
+
+            <p>
+
+                Last Modification:
+
+                <span id="last-modified"></span>
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
