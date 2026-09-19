@@ -1,10 +1,13 @@
 /* =========================
+   Mbabane Chamber of Commerce
    Larger Screen Styles
    ========================= */
 
 @media screen and (min-width: 700px) {
 
-    /* Header */
+    /* =========================
+       Header
+       ========================= */
 
     .header-content {
         max-width: 1200px;
@@ -12,30 +15,32 @@
         padding: 1.25rem 2rem;
     }
 
-    .brand h1 {
-        font-size: 1.6rem;
+    .brand img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .brand .site-title {
+        font-size: 1.5rem;
     }
 
     .brand p {
         font-size: 0.95rem;
     }
 
-    .brand img {
-        width: 75px;
-        height: 75px;
-    }
+    /* =========================
+       Navigation
+       ========================= */
 
     #menu-button {
         display: none;
     }
 
-    /* Navigation */
-
     nav {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        background-color: var(--dark-color);
+        align-items: center;
     }
 
     nav a {
@@ -43,21 +48,104 @@
         padding: 1rem 1.5rem;
     }
 
-    /* Main */
+    /* =========================
+       Main
+       ========================= */
 
     main {
         padding: 2rem;
     }
 
-    /* Grid */
+    main > h1 {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* =========================
+       Hero
+       ========================= */
+
+    .hero img {
+        min-height: 400px;
+        max-height: 500px;
+        object-fit: cover;
+    }
+
+    .hero-content {
+        left: 2rem;
+        right: auto;
+        bottom: 2rem;
+        width: 50%;
+        max-width: 550px;
+        padding: 1.5rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    /* =========================
+       Events
+       ========================= */
+
+    .event-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .event-card {
+        min-height: 190px;
+    }
+
+    /* =========================
+       Weather
+       ========================= */
+
+    .weather {
+        padding: 1.5rem;
+    }
+
+    .weather {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+    .weather > h2 {
+        grid-column: 1 / -1;
+    }
+
+    .current-weather,
+    .forecast {
+        margin-bottom: 0;
+    }
+
+    #forecast-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* =========================
+       Spotlights
+       ========================= */
+
+    #spotlight-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .spotlight-card {
+        min-height: 350px;
+    }
+
+    /* =========================
+       Directory
+       ========================= */
 
     .member-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* List */
-
     .member-list .member-card {
+        display: flex;
         flex-direction: row;
         align-items: center;
         gap: 1.5rem;
@@ -71,16 +159,28 @@
         flex-shrink: 0;
     }
 
-    /* Footer */
+    /* =========================
+       Footer
+       ========================= */
 
     footer {
         display: flex;
         justify-content: space-between;
-        text-align: left;
+        gap: 2rem;
+        max-width: none;
         padding: 2rem;
+        text-align: left;
+    }
+
+    .footer-contact,
+    .footer-development {
+        margin-bottom: 0;
     }
 }
 
+/* =========================
+   Extra Large Screens
+   ========================= */
 
 @media screen and (min-width: 1000px) {
 
@@ -88,7 +188,11 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .brand h1 {
-        font-size: 1.8rem;
+    .brand .site-title {
+        font-size: 1.7rem;
+    }
+
+    .hero-content {
+        width: 45%;
     }
 }
