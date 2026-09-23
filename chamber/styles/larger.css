@@ -196,3 +196,15 @@
         width: 45%;
     }
 }
+/* =========================
+   JOIN PAGE - LARGE SCREENS
+========================= */
+
+.join-layout {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+}
+
+.membership-cards {
+    grid-template-columns: 1fr;
+}
