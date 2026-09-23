@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Join the Mbabane Chamber of Commerce and choose a membership level that fits your organization.">
+    <meta name="author" content="Nothando Alwande Mabaso">
+
+    <meta property="og:title" content="Join | Mbabane Chamber of Commerce">
+    <meta property="og:description" content="Become a member of the Mbabane Chamber of Commerce.">
+    <meta property="og:type" content="website">
+
+    <title>Join | Mbabane Chamber of Commerce</title>
+
+    <link rel="icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="site-branding">
+                <img src="images/favicon.svg" alt="Mbabane Chamber of Commerce logo">
+                <div>
+                    <h1>Mbabane Chamber of Commerce</h1>
+                    <p>Supporting Business. Building Community.</p>
+                </div>
+            </div>
+
+            <button id="menu-button" aria-label="Open navigation menu">☰</button>
+        </div>
+
+        <nav id="main-nav">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="active">Join</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-heading">
+            <h2>Join the Mbabane Chamber of Commerce</h2>
+            <p>
+                Become part of a growing business community and enjoy benefits
+                designed to help your organization grow.
+            </p>
+        </section>
+
+        <div class="join-layout">
+
+            <!-- APPLICATION FORM -->
+            <section class="form-section">
+                <h2>Membership Application</h2>
+
+                <form method="get" action="thankyou.html">
+
+                    <label>
+                        First Name
+                        <input
+                            type="text"
+                            name="firstName"
+                            title="Enter your first name"
+                            autocomplete="given-name"
+                            required>
+                    </label>
+
+                    <label>
+                        Last Name
+                        <input
+                            type="text"
+                            name="lastName"
+                            title="Enter your last name"
+                            autocomplete="family-name"
+                            required>
+                    </label>
+
+                    <label>
+                        Organizational Title
+                        <input
+                            type="text"
+                            name="organizationTitle"
+                            title="Enter your organizational title"
+                            autocomplete="organization-title"
+                            pattern="[A-Za-z\s-]{7,}"
+                            placeholder="Example: Manager"
+                        >
+                    </label>
+
+                    <label>
+                        Email Address
+                        <input
+                            type="email"
+                            name="email"
+                            title="Enter your email address"
+                            autocomplete="email"
+                            placeholder="example@email.com"
+                            required>
+                    </label>
+
+                    <label>
+                        Mobile Phone Number
+                        <input
+                            type="tel"
+                            name="phone"
+                            title="Enter your mobile phone number"
+                            autocomplete="tel"
+                            required>
+                    </label>
+
+                    <label>
+                        Business / Organization Name
+                        <input
+                            type="text"
+                            name="organization"
+                            title="Enter your business or organization name"
+                            autocomplete="organization"
+                            required>
+                    </label>
+
+                    <label>
+                        Membership Level
+                        <select name="membership" title="Select a membership level" required>
+                            <option value="">Select a membership level</option>
+                            <option value="np">NP Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Business / Organization Description
+                        <textarea
+                            name="description"
+                            title="Describe your business or organization"
+                            rows="6"></textarea>
+                    </label>
+
+                    <input
+                        type="hidden"
+                        name="timestamp"
+                        id="timestamp">
+
+                    <input
+                        type="submit"
+                        value="Submit Membership Application">
+                </form>
+            </section>
+
+
+            <!-- MEMBERSHIP CARDS -->
+            <section class="membership-section">
+                <h2>Membership Levels</h2>
+
+                <div class="membership-cards">
+
+                    <article class="membership-card">
+                        <h3>NP Membership</h3>
+                        <p>For nonprofit organizations.</p>
+                        <p><strong>No Fee</strong></p>
+                        <button class="modal-link" data-modal="np-modal">
+                            More Information
+                        </button>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Bronze Membership</h3>
+                        <p>Basic support for growing businesses.</p>
+                        <p><strong>E500 / year</strong></p>
+                        <button class="modal-link" data-modal="bronze-modal">
+                            More Information
+                        </button>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Silver Membership</h3>
+                        <p>Extra visibility and business benefits.</p>
+                        <p><strong>E1,000 / year</strong></p>
+                        <button class="modal-link" data-modal="silver-modal">
+                            More Information
+                        </button>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Gold Membership</h3>
+                        <p>Maximum exposure and premium benefits.</p>
+                        <p><strong>E2,000 / year</strong></p>
+                        <button class="modal-link" data-modal="gold-modal">
+                            More Information
+                        </button>
+                    </article>
+
+                </div>
+            </section>
+
+        </div>
+
+
+        <!-- NP MODAL -->
+        <dialog id="np-modal">
+            <h2>NP Membership</h2>
+            <p>
+                NP Membership is designed for nonprofit organizations.
+            </p>
+            <ul>
+                <li>No annual membership fee</li>
+                <li>Networking opportunities</li>
+                <li>Community events</li>
+                <li>Access to selected training opportunities</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+
+        <!-- BRONZE MODAL -->
+        <dialog id="bronze-modal">
+            <h2>Bronze Membership</h2>
+            <p>
+                Bronze Membership provides basic benefits for growing businesses.
+            </p>
+            <ul>
+                <li>Business networking opportunities</li>
+                <li>Selected training opportunities</li>
+                <li>Member event discounts</li>
+                <li>Business directory listing</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+
+        <!-- SILVER MODAL -->
+        <dialog id="silver-modal">
+            <h2>Silver Membership</h2>
+            <p>
+                Silver Membership provides additional visibility and business support.
+            </p>
+            <ul>
+                <li>All Bronze Membership benefits</li>
+                <li>Additional training opportunities</li>
+                <li>Greater event discounts</li>
+                <li>Advertising opportunities</li>
+                <li>Featured business promotion</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+
+        <!-- GOLD MODAL -->
+        <dialog id="gold-modal">
+            <h2>Gold Membership</h2>
+            <p>
+                Gold Membership provides premium exposure and benefits.
+            </p>
+            <ul>
+                <li>All Silver Membership benefits</li>
+                <li>Premium advertising opportunities</li>
+                <li>Homepage spotlight opportunities</li>
+                <li>Priority event opportunities</li>
+                <li>Premium networking opportunities</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Mbabane Chamber of Commerce</p>
+        <p>Nothando Alwande Mabaso | WDD231</p>
+        <p>Mbabane, Eswatini</p>
+        <p id="last-modified"></p>
+    </footer>
+
+</body>
+</html>
