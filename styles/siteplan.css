@@ -1,0 +1,265 @@
+/* ================================
+   Mbabane Chamber of Commerce
+   Site Plan Styles
+   ================================ */
+
+
+/* ---------- Base Styles ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #1f4e5f;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* ---------- Header ---------- */
+
+header {
+    background-color: #1f4e5f;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 8px solid #f2c14e;
+}
+
+.header-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.site-label {
+    margin: 0 0 0.5rem;
+    color: #f2c14e;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+}
+
+header h1 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 2.2rem;
+}
+
+.subtitle {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+}
+
+
+/* ---------- Main Content ---------- */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+
+/* ---------- Sections ---------- */
+
+.plan-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 2px solid #1f4e5f;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.plan-section h2 {
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 4px solid #f2c14e;
+    color: #1f4e5f;
+    font-family: Georgia, serif;
+    font-size: 1.7rem;
+}
+
+.plan-section h3 {
+    color: #1f4e5f;
+    font-family: Georgia, serif;
+}
+
+
+/* ---------- Scenarios ---------- */
+
+.scenario {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-left: 6px solid #f2c14e;
+    background-color: #f7f7f7;
+}
+
+.scenario h3 {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+}
+
+.scenario p {
+    margin-bottom: 0;
+}
+
+
+/* ---------- Color Scheme ---------- */
+
+.color-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.color-card {
+    border: 2px solid #1f4e5f;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.color-swatch {
+    height: 80px;
+}
+
+.color-swatch.teal {
+    background-color: #1f4e5f;
+}
+
+.color-swatch.gold {
+    background-color: #f2c14e;
+}
+
+.color-swatch.white {
+    background-color: #ffffff;
+    border-bottom: 1px solid #1f4e5f;
+}
+
+.color-card h3,
+.color-card p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.color-card h3 {
+    margin-top: 1rem;
+}
+
+.color-code {
+    font-weight: bold;
+}
+
+
+/* ---------- Typography ---------- */
+
+.font-example {
+    margin: 1.5rem 0;
+    padding: 1.25rem;
+    border-left: 6px solid #f2c14e;
+    background-color: #f7f7f7;
+}
+
+.font-example h3 {
+    margin-top: 0;
+}
+
+.heading-font {
+    font-family: Georgia, serif;
+    font-size: 1.5rem;
+}
+
+.body-font {
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+
+/* ---------- Wireframes ---------- */
+
+.wireframe-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.wireframe {
+    text-align: center;
+}
+
+.wireframe h3 {
+    margin-bottom: 1rem;
+}
+
+.wireframe-placeholder {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border: 3px dashed #1f4e5f;
+    background-color: #ffffff;
+}
+
+.placeholder-note {
+    font-size: 0.9rem;
+}
+
+
+/* ---------- Lists ---------- */
+
+ul {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+    margin-top: 3rem;
+    padding: 2rem 1rem;
+    background-color: #1f4e5f;
+    color: #ffffff;
+    text-align: center;
+    border-top: 8px solid #f2c14e;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+
+/* ---------- Larger Screens ---------- */
+
+@media screen and (min-width: 700px) {
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    main {
+        width: 85%;
+    }
+
+    .color-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .wireframe-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .plan-section {
+        padding: 2rem;
+    }
+}
