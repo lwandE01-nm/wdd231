@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Discover places, attractions, culture, nature, and businesses in and around Mbabane, Eswatini."
+    >
+
+    <meta name="author" content="Nothando Mabaso">
+
+    <title>Mbabane Chamber of Commerce | Discover</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mbabane Chamber of Commerce | Discover">
+    <meta
+        property="og:description"
+        content="Discover attractions, culture, nature, shopping, and other features in and around Mbabane, Eswatini."
+    >
+    <meta
+        property="og:image"
+        content="https://lwande01-nm.github.io/wdd231/chamber/images/sibebe-rock.webp"
+    >
+    <meta
+        property="og:url"
+        content="https://lwande01-nm.github.io/wdd231/chamber/discover.html"
+    >
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Discover CSS -->
+    <link rel="stylesheet" href="styles/discover.css">
+
+    <!-- JavaScript Module -->
+    <script src="scripts/discover.js" type="module"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header-content">
+
+            <div class="brand">
+
+                <img
+                    src="images/logo.svg"
+                    alt="Mbabane Chamber of Commerce logo"
+                    width="75"
+                    height="75"
+                >
+
+                <div>
+                    <p class="site-title">Mbabane Chamber of Commerce</p>
+                    <p>Supporting Local Business</p>
+                </div>
+
+            </div>
+
+            <button
+                id="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+            >
+                ☰
+            </button>
+
+        </div>
+
+        <nav id="main-nav" aria-label="Main navigation">
+
+            <a href="index.html">Home</a>
+
+            <a
+                class="active"
+                href="discover.html"
+                aria-current="page"
+            >
+                Discover
+            </a>
+
+            <a href="directory.html">Directory</a>
+
+            <a href="join.html">Join</a>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1>Discover Mbabane</h1>
+
+        <section id="visit-message" class="visit-message">
+            <!-- Visitor message will be displayed here -->
+        </section>
+
+        <section
+            id="discover-grid"
+            class="discover-grid"
+            aria-label="Places of interest in and around Mbabane"
+        >
+            <!-- Discover cards will be generated with JavaScript -->
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-contact">
+
+            <h2>Mbabane Chamber of Commerce</h2>
+
+            <p>Mbabane, Eswatini</p>
+
+            <p>
+                Email:
+                <a href="mailto:info@mbabanechamber.org">
+                    info@mbabanechamber.org
+                </a>
+            </p>
+
+            <p>
+                Phone:
+                <a href="tel:+26824040000">
+                    +268 2404 0000
+                </a>
+            </p>
+
+        </div>
+
+        <div class="footer-development">
+
+            <p>
+                &copy;
+                <span id="current-year"></span>
+                Mbabane Chamber of Commerce
+            </p>
+
+            <p>Nothando Mabaso | WDD 231</p>
+
+            <p>
+                Last Modification:
+                <span id="last-modified"></span>
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
