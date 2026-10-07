@@ -1,0 +1,484 @@
+/* ================================
+   Explore Eswatini
+   Main Stylesheet
+   ================================ */
+
+/* ---------- Root Variables ---------- */
+
+:root {
+    --primary-color: #1f5c4d;
+    --primary-dark: #143f35;
+    --secondary-color: #d9a441;
+    --accent-color: #f4efe3;
+    --background-color: #ffffff;
+    --surface-color: #f7f7f4;
+    --text-color: #222222;
+    --light-text: #ffffff;
+    --border-color: #dddddd;
+
+    --heading-font: Georgia, "Times New Roman", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+
+    --max-width: 1200px;
+}
+
+/* ---------- Reset ---------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ---------- Header ---------- */
+
+header {
+    background-color: var(--background-color);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.site-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: var(--max-width);
+    padding: 1rem 1.25rem;
+}
+
+.logo {
+    color: var(--primary-dark);
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--secondary-color);
+}
+
+/* ---------- Mobile Navigation ---------- */
+
+.menu-button {
+    background: none;
+    border: none;
+    color: var(--primary-dark);
+    cursor: pointer;
+    font-size: 1.8rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.navigation {
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+
+.navigation.open {
+    display: block;
+}
+
+.navigation ul {
+    background-color: var(--background-color);
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem 1.25rem;
+    text-decoration: none;
+}
+
+.navigation a:hover,
+.navigation a:focus {
+    background-color: var(--surface-color);
+    color: var(--primary-color);
+}
+
+.navigation a.active {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+}
+
+/* ---------- Main ---------- */
+
+main {
+    min-height: 70vh;
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+    align-items: center;
+    background:
+        linear-gradient(
+            rgba(20, 63, 53, 0.72),
+            rgba(20, 63, 53, 0.72)
+        ),
+        url("../images/explore-eswatini.jpg") center / cover;
+    color: var(--light-text);
+    display: flex;
+    min-height: 65vh;
+    padding: 4rem 1.25rem;
+}
+
+.hero-content {
+    margin: 0 auto;
+    max-width: var(--max-width);
+    width: 100%;
+}
+
+.hero h1 {
+    font-family: var(--heading-font);
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    max-width: 700px;
+}
+
+.hero p:not(.eyebrow) {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 650px;
+}
+
+/* ---------- Typography ---------- */
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+    line-height: 1.2;
+}
+
+.eyebrow {
+    color: var(--secondary-color);
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+}
+
+.section-heading {
+    margin-bottom: 2rem;
+    max-width: 750px;
+}
+
+.section-heading h2 {
+    color: var(--primary-dark);
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 1rem;
+}
+
+.section-heading > p:last-child {
+    color: #555555;
+}
+
+/* ---------- Buttons ---------- */
+
+.button {
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    color: #1c1c1c;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.8rem 1.4rem;
+    text-decoration: none;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--light-text);
+    color: var(--primary-dark);
+}
+
+.secondary-button {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--light-text);
+}
+
+.secondary-button:hover,
+.secondary-button:focus {
+    background-color: var(--primary-dark);
+    color: var(--light-text);
+}
+
+/* ---------- Introduction ---------- */
+
+.introduction {
+    margin: 0 auto;
+    max-width: var(--max-width);
+    padding: 5rem 1.25rem;
+}
+
+/* ---------- Featured Section ---------- */
+
+.featured {
+    background-color: var(--surface-color);
+    padding: 5rem 1.25rem;
+}
+
+.featured > .section-heading,
+.featured > .destination-grid,
+.featured > .section-link {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--max-width);
+}
+
+.destination-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+}
+
+.destination-card {
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.destination-card img {
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    width: 100%;
+}
+
+.destination-card-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 1.25rem;
+}
+
+.destination-card h3 {
+    color: var(--primary-dark);
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.destination-card .category {
+    color: var(--primary-color);
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+}
+
+.destination-card p {
+    color: #555555;
+    margin-bottom: 1rem;
+}
+
+.destination-card .button {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.section-link {
+    margin-top: 2rem;
+}
+
+/* ---------- Why Visit ---------- */
+
+.why-visit {
+    margin: 0 auto;
+    max-width: var(--max-width);
+    padding: 5rem 1.25rem;
+}
+
+.experience-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+}
+
+.experience-card {
+    background-color: var(--accent-color);
+    padding: 2rem;
+}
+
+.experience-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.experience-card h3 {
+    color: var(--primary-dark);
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+}
+
+.experience-card p {
+    color: #444444;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+    background-color: var(--primary-dark);
+    color: var(--light-text);
+}
+
+.footer-content {
+    display: grid;
+    gap: 2rem;
+    margin: 0 auto;
+    max-width: var(--max-width);
+    padding: 3rem 1.25rem;
+}
+
+.footer-brand h2 {
+    font-family: var(--heading-font);
+    margin-bottom: 0.75rem;
+}
+
+.footer-brand p {
+    color: #eeeeee;
+    max-width: 400px;
+}
+
+.footer-links h3 {
+    color: var(--secondary-color);
+    margin-bottom: 0.75rem;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: var(--light-text);
+    text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-links a:focus {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: 0 auto;
+    max-width: var(--max-width);
+    padding: 1.5rem 1.25rem;
+}
+
+.footer-bottom a {
+    color: var(--secondary-color);
+}
+
+/* ---------- Focus Accessibility ---------- */
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 3px;
+}
+
+/* ---------- Larger Screens ---------- */
+
+@media (min-width: 768px) {
+
+    .site-header {
+        padding: 1rem 2rem;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        position: static;
+        width: auto;
+    }
+
+    .navigation ul {
+        align-items: center;
+        border: none;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .navigation a {
+        padding: 0.6rem 0.9rem;
+    }
+
+    .destination-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .experience-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .footer-bottom {
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .site-header {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .destination-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .experience-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "name": "Malolotja Nature Reserve",
+        "region": "Hhohho",
+        "category": "Nature",
+        "description": "A vast protected area known for dramatic mountain scenery, hiking trails, waterfalls, and diverse wildlife.",
+        "entryFee": "Varies by activity",
+        "bestTime": "April to September",
+        "image": "images/malolotja.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Sibebe Rock",
+        "region": "Hhohho",
+        "category": "Adventure",
+        "description": "One of the world's largest exposed granite rock formations, offering spectacular scenery and hiking opportunities.",
+        "entryFee": "Varies by tour",
+        "bestTime": "May to September",
+        "image": "images/sibebe-rock.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Mantenga Cultural Village",
+        "region": "Hhohho",
+        "category": "Culture",
+        "description": "A cultural experience where visitors can learn about traditional Swazi life, music, dance, and customs.",
+        "entryFee": "Check locally",
+        "bestTime": "Year-round",
+        "image": "images/mantenga.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Mlilwane Wildlife Sanctuary",
+        "region": "Hhohho",
+        "category": "Wildlife",
+        "description": "A peaceful wildlife sanctuary where visitors can experience game drives, walking trails, cycling, and nature.",
+        "entryFee": "Check locally",
+        "bestTime": "May to September",
+        "image": "images/mlilwane.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Hlane Royal National Park",
+        "region": "Lubombo",
+        "category": "Wildlife",
+        "description": "A renowned wildlife reserve offering opportunities to see elephants, lions, rhinos, and other African wildlife.",
+        "entryFee": "Check locally",
+        "bestTime": "May to September",
+        "image": "images/hlane.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Mlawula Nature Reserve",
+        "region": "Lubombo",
+        "category": "Nature",
+        "description": "A scenic reserve featuring mountains, grasslands, forests, hiking trails, and a variety of wildlife.",
+        "entryFee": "Check locally",
+        "bestTime": "May to September",
+        "image": "images/mlawula.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Ngwenya Glass",
+        "region": "Hhohho",
+        "category": "Culture",
+        "description": "A popular craft destination where visitors can watch skilled artisans create beautiful glass products from recycled glass.",
+        "entryFee": "Free to visit",
+        "bestTime": "Year-round",
+        "image": "images/ngwenya-glass.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Maguga Dam",
+        "region": "Hhohho",
+        "category": "Nature",
+        "description": "A spectacular dam surrounded by mountains, offering beautiful views and opportunities for outdoor activities.",
+        "entryFee": "Varies by activity",
+        "bestTime": "April to September",
+        "image": "images/maguga.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Ezulwini Valley",
+        "region": "Hhohho",
+        "category": "Nature",
+        "description": "A beautiful valley surrounded by mountains and home to cultural attractions, hotels, restaurants, and outdoor activities.",
+        "entryFee": "Varies by attraction",
+        "bestTime": "Year-round",
+        "image": "images/ezulwini.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Shewula Mountain Camp",
+        "region": "Lubombo",
+        "category": "Adventure",
+        "description": "A community-based mountain destination offering hiking, cultural experiences, and impressive views across the lowveld.",
+        "entryFee": "Varies by activity",
+        "bestTime": "May to September",
+        "image": "images/shewula.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Sibebe Survivor",
+        "region": "Hhohho",
+        "category": "Adventure",
+        "description": "An outdoor adventure experience around the dramatic Sibebe landscape, combining hiking and exploration.",
+        "entryFee": "Check locally",
+        "bestTime": "May to September",
+        "image": "images/sibebe-survivor.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Nsangweni Bushveld Lodge",
+        "region": "Lubombo",
+        "category": "Wildlife",
+        "description": "A peaceful bushveld destination where visitors can enjoy nature, wildlife, and the surrounding lowveld landscape.",
+        "entryFee": "Check locally",
+        "bestTime": "May to September",
+        "image": "images/nsangweni.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Swazi Candles",
+        "region": "Manzini",
+        "category": "Culture",
+        "description": "A well-known craft centre featuring colourful handmade candles, local artwork, and opportunities to explore Swazi crafts.",
+        "entryFee": "Free to visit",
+        "bestTime": "Year-round",
+        "image": "images/swazi-candles.jpg"
+    },
+    {
+        "id": 14,
+        "name": "House on Fire",
+        "region": "Manzini",
+        "category": "Culture",
+        "description": "A creative cultural venue known for performances, festivals, art, food, and community events.",
+        "entryFee": "Varies by event",
+        "bestTime": "Check event schedule",
+        "image": "images/house-on-fire.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Mkhaya Game Reserve",
+        "region": "Lubombo",
+        "category": "Wildlife",
+        "description": "A protected wildlife reserve famous for close encounters with rhinos, elephants, buffalo, and other wildlife.",
+        "entryFee": "Check locally",
+        "bestTime": "May to September",
+        "image": "images/mkhaya.jpg"
+    },
+    {
+        "id": 16,
+        "name": "Phophonyane Falls",
+        "region": "Hhohho",
+        "category": "Nature",
+        "description": "A beautiful waterfall surrounded by forest and hiking trails, creating a peaceful escape into nature.",
+        "entryFee": "Check locally",
+        "bestTime": "November to March",
+        "image": "images/phophonyane.jpg"
+    },
+    {
+        "id": 17,
+        "name": "Sibebe Mountain",
+        "region": "Hhohho",
+        "category": "Adventure",
+        "description": "A dramatic granite mountain landscape offering hiking, photography, and panoramic views of the surrounding countryside.",
+        "entryFee": "Varies by activity",
+        "bestTime": "May to September",
+        "image": "images/sibebe-mountain.jpg"
+    },
+    {
+        "id": 18,
+        "name": "Lobamba",
+        "region": "Hhohho",
+        "category": "Culture",
+        "description": "A historic and cultural centre of Eswatini where visitors can learn more about the country's royal and traditional heritage.",
+        "entryFee": "Varies by attraction",
+        "bestTime": "Year-round",
+        "image": "images/lobamba.jpg"
+    }
+]
