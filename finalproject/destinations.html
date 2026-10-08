@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Destinations | Explore Eswatini</title>
+
+    <meta
+        name="description"
+        content="Explore destinations across Eswatini, including wildlife reserves, cultural attractions, nature, and adventure experiences."
+    >
+    <meta name="author" content="Nothando Mabaso">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Destinations | Explore Eswatini">
+    <meta
+        property="og:description"
+        content="Discover nature, wildlife, culture, and adventure destinations across Eswatini."
+    >
+    <meta property="og:type" content="website">
+    <meta
+        property="og:url"
+        content="https://lwande01-nm.github.io/wdd231/finalproject/destinations.html"
+    >
+    <meta property="og:image" content="images/explore-eswatini.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JavaScript -->
+    <script type="module" src="js/destinations.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="site-header">
+
+            <a href="index.html" class="logo">
+                <span>Explore</span> Eswatini
+            </a>
+
+            <button
+                class="menu-button"
+                id="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="main-navigation"
+            >
+                ☰
+            </button>
+
+            <nav id="main-navigation" class="navigation">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="destinations.html"
+                            class="active"
+                            aria-current="page"
+                        >
+                            Destinations
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="visit.html">
+                            Plan Your Visit
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="page-hero">
+            <div class="section-heading">
+                <p class="eyebrow">Explore Eswatini</p>
+
+                <h1>Discover Our Destinations</h1>
+
+                <p>
+                    Explore places to experience nature, wildlife, culture,
+                    and adventure across the Kingdom of Eswatini.
+                </p>
+            </div>
+        </section>
+
+        <section class="destinations-section">
+
+            <div class="section-heading">
+                <h2>Find Your Next Experience</h2>
+
+                <p>
+                    Browse our destinations and discover something that
+                    interests you.
+                </p>
+            </div>
+
+            <div class="filter-controls">
+
+                <label for="category-filter">
+                    Filter by category
+                </label>
+
+                <select id="category-filter">
+                    <option value="all">All Destinations</option>
+                    <option value="Nature">Nature</option>
+                    <option value="Wildlife">Wildlife</option>
+                    <option value="Culture">Culture</option>
+                    <option value="Adventure">Adventure</option>
+                </select>
+
+            </div>
+
+            <div
+                id="destination-list"
+                class="destination-grid"
+                aria-live="polite"
+            >
+                <!-- JavaScript will generate destinations here -->
+            </div>
+
+        </section>
+
+        <!-- Destination Details Modal -->
+        <dialog id="details-modal" class="details-modal">
+
+            <div class="modal-container">
+
+                <button
+                    id="modal-close"
+                    class="modal-close"
+                    type="button"
+                    aria-label="Close destination details"
+                >
+                    ✕
+                </button>
+
+                <div id="modal-content">
+                    <!-- JavaScript will insert destination details here -->
+                </div>
+
+            </div>
+
+        </dialog>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <h2>Explore Eswatini</h2>
+
+                <p>
+                    Your guide to discovering the beauty and experiences
+                    of Eswatini.
+                </p>
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Explore</h3>
+
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="destinations.html">Destinations</a>
+                    </li>
+
+                    <li>
+                        <a href="visit.html">Plan Your Visit</a>
+                    </li>
+
+                    <li>
+                        <a href="attributions.html">Attributions</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; <span id="current-year"></span>
+                Explore Eswatini | Nothando Mabaso
+            </p>
+
+            <p>
+                <a href="#" id="video-link">
+                    Project Demonstration Video
+                </a>
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Plan Your Visit | Explore Eswatini</title>
+
+    <meta
+        name="description"
+        content="Plan your Eswatini adventure by sharing your travel interests and discovering experiences that match your trip."
+    >
+    <meta name="author" content="Nothando Mabaso">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Plan Your Visit | Explore Eswatini">
+    <meta
+        property="og:description"
+        content="Start planning your next Eswatini adventure."
+    >
+    <meta property="og:type" content="website">
+    <meta
+        property="og:url"
+        content="https://lwande01-nm.github.io/wdd231/finalproject/visit.html"
+    >
+    <meta property="og:image" content="images/explore-eswatini.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JavaScript -->
+    <script type="module" src="js/visit.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="site-header">
+
+            <a href="index.html" class="logo">
+                <span>Explore</span> Eswatini
+            </a>
+
+            <button
+                class="menu-button"
+                id="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="main-navigation"
+            >
+                ☰
+            </button>
+
+            <nav id="main-navigation" class="navigation">
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="destinations.html">
+                            Destinations
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="visit.html"
+                            class="active"
+                            aria-current="page"
+                        >
+                            Plan Your Visit
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="page-hero">
+            <div class="section-heading">
+
+                <p class="eyebrow">Plan Your Adventure</p>
+
+                <h1>Plan Your Visit</h1>
+
+                <p>
+                    Tell us what kind of experience you're looking for
+                    and start planning your Eswatini adventure.
+                </p>
+
+            </div>
+        </section>
+
+        <section class="visit-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">Travel Planner</p>
+
+                <h2>Tell Us About Your Trip</h2>
+
+                <p>
+                    Complete the form below to share your travel interests.
+                </p>
+
+            </div>
+
+            <form
+                class="travel-form"
+                action="form-action.html"
+                method="get"
+            >
+
+                <div class="form-group">
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        autocomplete="name"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        autocomplete="email"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="travel-date">
+                        Preferred Travel Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="travel-date"
+                        name="travel-date"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="experience">
+                        What interests you most?
+                    </label>
+
+                    <select
+                        id="experience"
+                        name="experience"
+                        required
+                    >
+                        <option value="">
+                            Select an experience
+                        </option>
+
+                        <option value="nature">
+                            Nature
+                        </option>
+
+                        <option value="wildlife">
+                            Wildlife
+                        </option>
+
+                        <option value="culture">
+                            Culture
+                        </option>
+
+                        <option value="adventure">
+                            Adventure
+                        </option>
+
+                    </select>
+                </div>
+
+                <div class="form-group">
+
+                    <label for="travelers">
+                        Number of Travelers
+                    </label>
+
+                    <input
+                        type="number"
+                        id="travelers"
+                        name="travelers"
+                        min="1"
+                        max="20"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="message">
+                        What would you like to experience?
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Tell us about your ideal trip..."
+                    ></textarea>
+
+                </div>
+
+                <button
+                    class="button"
+                    type="submit"
+                >
+                    Submit Travel Plan
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <h2>Explore Eswatini</h2>
+
+                <p>
+                    Your guide to discovering the beauty and experiences
+                    of Eswatini.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Explore</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="destinations.html">Destinations</a>
+                    </li>
+
+                    <li>
+                        <a href="visit.html">Plan Your Visit</a>
+                    </li>
+
+                    <li>
+                        <a href="attributions.html">Attributions</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; <span id="current-year"></span>
+                Explore Eswatini | Nothando Mabaso
+            </p>
+
+            <p>
+                <a href="#" id="video-link">
+                    Project Demonstration Video
+                </a>
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
