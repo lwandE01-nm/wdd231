@@ -19,21 +19,19 @@ export function setupModal() {
             <p>${attraction.description}</p>
 
             <p>
-                <strong>Region:</strong>
-                ${attraction.region}
+                <strong>Region:</strong> ${attraction.region}
             </p>
 
             <p>
-                <strong>Entry fee:</strong>
-                ${attraction.entryFee}
+                <strong>Entry fee:</strong> ${attraction.entryFee}
             </p>
 
             <p>
-                <strong>Best time to visit:</strong>
-                ${attraction.bestTime}
+                <strong>Best time to visit:</strong> ${attraction.bestTime}
             </p>
         `;
 
+        modal.setAttribute("aria-labelledby", "modal-title");
         modal.showModal();
         closeButton.focus();
     }

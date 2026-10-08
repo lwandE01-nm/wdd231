@@ -6,11 +6,14 @@ const currentYear = document.querySelector("#current-year");
 const menuButton = document.querySelector("#menu-button");
 const navigation = document.querySelector("#main-navigation");
 
+const modal = setupModal();
+
 function setupNavigation() {
     menuButton.addEventListener("click", () => {
         const isOpen = navigation.classList.toggle("open");
 
         menuButton.setAttribute("aria-expanded", isOpen);
+
         menuButton.setAttribute(
             "aria-label",
             isOpen ? "Close navigation menu" : "Open navigation menu"
@@ -66,6 +69,22 @@ function displayFeaturedAttractions(attractions) {
             `;
         })
         .join("");
+
+    const detailButtons = document.querySelectorAll("[data-id]");
+
+    detailButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            const attractionId = Number(button.dataset.id);
+
+            const attraction = attractions.find(
+                (item) => item.id === attractionId
+            );
+
+            if (attraction) {
+                modal.openModal(attraction);
+            }
+        });
+    });
 }
 
 async function loadFeaturedAttractions() {
