@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sources and Attributions | Explore Eswatini</title>
+
+    <meta
+        name="description"
+        content="Explore the sources, image credits, and resources used to create the Explore Eswatini travel guide."
+    >
+    <meta name="author" content="Nothando Alwande Mabaso">
+
+    <!-- Open Graph Metadata -->
+    <meta
+        property="og:title"
+        content="Sources and Attributions | Explore Eswatini"
+    >
+    <meta
+        property="og:description"
+        content="Find the image credits, destination information sources, and resources used in the Explore Eswatini travel guide."
+    >
+    <meta property="og:type" content="website">
+    <meta
+        property="og:url"
+        content="https://lwande01-nm.github.io/wdd231/finalproject/attributions.html"
+    >
+    <meta
+        property="og:image"
+        content="https://lwande01-nm.github.io/wdd231/finalproject/images/explore-eswatini.jpg"
+    >
+
+    <!-- Favicon -->
+    <link
+        rel="icon"
+        href="https://lwande01-nm.github.io/wdd231/finalproject/images/favicon.ico"
+        type="image/x-icon"
+    >
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="site-header">
+
+            <a href="index.html" class="logo">
+                <span>Explore</span> Eswatini
+            </a>
+
+            <button
+                class="menu-button"
+                id="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="main-navigation"
+            >
+                ☰
+            </button>
+
+            <nav id="main-navigation" class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="visit.html">Plan Your Visit</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="page-hero">
+            <div class="section-heading">
+
+                <p class="eyebrow">Explore Eswatini</p>
+
+                <h1>Sources and Attributions</h1>
+
+                <p>
+                    Explore the sources and credits for the information,
+                    images, and resources used on this website.
+                </p>
+
+            </div>
+        </section>
+
+        <section class="visit-section">
+
+            <div class="section-heading">
+
+                <h2>Destination Information</h2>
+
+                <p>
+                    Destination details should be checked against official
+                    tourism websites and the relevant attraction's official
+                    information before publication.
+                </p>
+
+                <p>
+                    <a
+                        href="https://www.thekingdomofeswatini.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Eswatini Tourism Authority
+                    </a>
+                </p>
+
+            </div>
+
+            <div class="section-heading">
+
+                <h2>Image Credits</h2>
+
+                <p>
+                    Image credits and applicable licenses will be listed
+                    here after the project images have been selected.
+                </p>
+
+            </div>
+
+            <div class="section-heading">
+
+                <h2>Development</h2>
+
+                <p>
+                    Website structure, styling, and JavaScript functionality
+                    were developed for this student project by Nothando
+                    Mabaso.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <h2>Explore Eswatini</h2>
+
+                <p>
+                    Your guide to discovering the beauty and experiences
+                    of Eswatini.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Explore</h3>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="visit.html">Plan Your Visit</a></li>
+                    <li>
+                        <a href="attributions.html" aria-current="page">
+                            Attributions
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; <span id="current-year"></span>
+                Explore Eswatini | Nothando Alwande Mabaso
+            </p>
+
+            <p>
+                <a href="#" id="video-link">
+                    Project Demonstration Video
+                </a>
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script>
+        document.querySelector("#current-year").textContent =
+            new Date().getFullYear();
+
+        const menuButton = document.querySelector("#menu-button");
+        const navigation = document.querySelector("#main-navigation");
+
+        menuButton.addEventListener("click", () => {
+            const isOpen = navigation.classList.toggle("open");
+
+            menuButton.setAttribute("aria-expanded", isOpen);
+
+            menuButton.setAttribute(
+                "aria-label",
+                isOpen
+                    ? "Close navigation menu"
+                    : "Open navigation menu"
+            );
+
+            menuButton.textContent = isOpen ? "✕" : "☰";
+        });
+    </script>
+
+</body>
+</html>

@@ -1,37 +1,48 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Plan Your Visit | Explore Eswatini</title>
+    <title>Plan Your Visit to Eswatini | Travel Planner</title>
 
     <meta
         name="description"
-        content="Plan your Eswatini adventure by sharing your travel interests and discovering experiences that match your trip."
+        content="Plan your Eswatini adventure by sharing your travel interests, preferred dates, and favorite experiences."
     >
-    <meta name="author" content="Nothando Mabaso">
+    <meta name="author" content="Nothando Alwande Mabaso">
 
     <!-- Open Graph Metadata -->
-    <meta property="og:title" content="Plan Your Visit | Explore Eswatini">
+    <meta
+        property="og:title"
+        content="Plan Your Visit to Eswatini | Travel Planner"
+    >
     <meta
         property="og:description"
-        content="Start planning your next Eswatini adventure."
+        content="Start planning your Eswatini adventure. Share your travel interests and discover nature, wildlife, culture, and outdoor experiences."
     >
     <meta property="og:type" content="website">
     <meta
         property="og:url"
         content="https://lwande01-nm.github.io/wdd231/finalproject/visit.html"
     >
-    <meta property="og:image" content="images/explore-eswatini.jpg">
+    <meta
+        property="og:image"
+        content="https://lwande01-nm.github.io/wdd231/finalproject/images/explore-eswatini.jpg"
+    >
 
     <!-- Favicon -->
-    <link rel="icon" href="images/favicon.ico">
+    <link
+        rel="icon"
+        href="https://lwande01-nm.github.io/wdd231/finalproject/images/favicon.ico"
+        type="image/x-icon"
+    >
 
-    <!-- CSS -->
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- JavaScript -->
+    <!-- JavaScript Module -->
     <script type="module" src="js/visit.js"></script>
 </head>
 
@@ -57,17 +68,12 @@
 
             <nav id="main-navigation" class="navigation">
                 <ul>
-
                     <li>
-                        <a href="index.html">
-                            Home
-                        </a>
+                        <a href="index.html">Home</a>
                     </li>
 
                     <li>
-                        <a href="destinations.html">
-                            Destinations
-                        </a>
+                        <a href="destinations.html">Destinations</a>
                     </li>
 
                     <li>
@@ -79,7 +85,6 @@
                             Plan Your Visit
                         </a>
                     </li>
-
                 </ul>
             </nav>
 
@@ -88,6 +93,7 @@
 
     <main>
 
+        <!-- Page Introduction -->
         <section class="page-hero">
             <div class="section-heading">
 
@@ -103,6 +109,7 @@
             </div>
         </section>
 
+        <!-- Travel Planner Form -->
         <section class="visit-section">
 
             <div class="section-heading">
@@ -124,30 +131,26 @@
             >
 
                 <div class="form-group">
-                    <label for="name">
-                        Full Name
-                    </label>
+                    <label for="name">Full Name</label>
 
                     <input
                         type="text"
                         id="name"
                         name="name"
-                        required
                         autocomplete="name"
+                        required
                     >
                 </div>
 
                 <div class="form-group">
-                    <label for="email">
-                        Email Address
-                    </label>
+                    <label for="email">Email Address</label>
 
                     <input
                         type="email"
                         id="email"
                         name="email"
-                        required
                         autocomplete="email"
+                        required
                     >
                 </div>
 
@@ -173,31 +176,15 @@
                         name="experience"
                         required
                     >
-                        <option value="">
-                            Select an experience
-                        </option>
-
-                        <option value="nature">
-                            Nature
-                        </option>
-
-                        <option value="wildlife">
-                            Wildlife
-                        </option>
-
-                        <option value="culture">
-                            Culture
-                        </option>
-
-                        <option value="adventure">
-                            Adventure
-                        </option>
-
+                        <option value="">Select an experience</option>
+                        <option value="nature">Nature</option>
+                        <option value="wildlife">Wildlife</option>
+                        <option value="culture">Culture</option>
+                        <option value="adventure">Adventure</option>
                     </select>
                 </div>
 
                 <div class="form-group">
-
                     <label for="travelers">
                         Number of Travelers
                     </label>
@@ -210,11 +197,9 @@
                         max="20"
                         required
                     >
-
                 </div>
 
                 <div class="form-group">
-
                     <label for="message">
                         What would you like to experience?
                     </label>
@@ -225,13 +210,9 @@
                         rows="5"
                         placeholder="Tell us about your ideal trip..."
                     ></textarea>
-
                 </div>
 
-                <button
-                    class="button"
-                    type="submit"
-                >
+                <button class="button" type="submit">
                     Submit Travel Plan
                 </button>
 
@@ -241,6 +222,7 @@
 
     </main>
 
+    <!-- Footer -->
     <footer>
 
         <div class="footer-content">
@@ -261,23 +243,16 @@
                 <h3>Explore</h3>
 
                 <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
 
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="visit.html" aria-current="page">
+                            Plan Your Visit
+                        </a>
                     </li>
 
-                    <li>
-                        <a href="destinations.html">Destinations</a>
-                    </li>
-
-                    <li>
-                        <a href="visit.html">Plan Your Visit</a>
-                    </li>
-
-                    <li>
-                        <a href="attributions.html">Attributions</a>
-                    </li>
-
+                    <li><a href="attributions.html">Attributions</a></li>
                 </ul>
 
             </div>
@@ -288,7 +263,7 @@
 
             <p>
                 &copy; <span id="current-year"></span>
-                Explore Eswatini | Nothando Mabaso
+                Explore Eswatini | Nothando Alwande Mabaso
             </p>
 
             <p>
